@@ -68,7 +68,7 @@ def display_score(score, high_score):
     screen.blit(score_text, [10, 10])
 
 
-def display_message(message, duration=5):
+def display_message(message, duration = 4):
     screen.fill(BLACK)
     draw_border()
     text = font.render(message, True, WHITE)
@@ -128,9 +128,9 @@ def main():
                         dashing = True
                         last_dash_time = time.time()
 
-        if score == 700 and not marry_me_shown:
+        if score == 790 and not marry_me_shown:
             marry_me_shown = True
-            display_message("Marry Me?", 5)
+            display_message("Marry Me?", 4)
 
         if dashing and time.time() - last_dash_time > 1:
             dashing = False
