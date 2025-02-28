@@ -128,7 +128,7 @@ def main():
                         dashing = True
                         last_dash_time = time.time()
 
-        if score == 790 and not marry_me_shown:
+        if score == 800 and not marry_me_shown:
             marry_me_shown = True
             display_message("Marry Me?", 4)
 
