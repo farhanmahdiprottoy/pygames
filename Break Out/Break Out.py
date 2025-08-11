@@ -75,8 +75,12 @@ while running:
     for brick in bricks:
         # pygame.draw.rect(screen, BRICK_RED, brick)
         pygame.draw.rect(screen, PRISON_BRICK, brick)
+    
+    if not bricks:
+        running = False    
 
     pygame.display.flip()
     pygame.time.delay(15)
 
 pygame.quit()
+
