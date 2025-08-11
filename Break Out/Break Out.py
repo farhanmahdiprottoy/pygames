@@ -4,7 +4,7 @@ import random
 pygame.init()
 
 WIDTH, HEIGHT = 1280, 700
-RICH_BLACK = (10, 10, 10)
+
 WHITE = (255, 255, 255)
 PRISON_BRICK = (56, 59, 57)
 BRICK_RED = (203, 65, 84)
@@ -83,4 +83,5 @@ while running:
     pygame.time.delay(15)
 
 pygame.quit()
+
 
